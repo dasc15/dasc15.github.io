@@ -235,7 +235,6 @@ a[href^="tel:"] {
 /* Footer */
 
 footer {
-    padding-top: 160px;
 }
 
 .copyright{
@@ -272,8 +271,8 @@ i.scroll:hover {
 .details {
     display: inline-block;
     padding: 0 25px;
-    height: 50px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     font-size: 16px;
     line-height: 50px;
     border-radius: 25px;
@@ -314,7 +313,14 @@ blockquote{
     }
 
     .map {
-        height: 75%;
+        height: 100%;
+		width: 100%;
+		/*overflow:hidden;*/
+		padding-bottom:100%;
     }
+	
+	.email{
+		font-size: 1.8em;
+	}
 
 }
