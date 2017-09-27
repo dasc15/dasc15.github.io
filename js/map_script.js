@@ -1,6 +1,6 @@
 function initMap() {
     var mapOptions = {
-        center: new google.maps.LatLng(41.1372641, -8.3882892),
+        center: new google.maps.LatLng(41.1511507, -8.3561173),
         zoom: 11
     ,
         mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -42,6 +42,12 @@ function initMap() {
         map: map,
         position: new google.maps.LatLng(41.0400076, -8.2725503),
         title: 'Laboratório Menezes Nogueira - Castelo de Paiva' 
+    });
+    
+     new google.maps.Marker({
+        map: map,
+        position: new google.maps.LatLng(41.1742296, -8.3303798),
+        title: 'Ginásio Irivo Club' 
     });
     
     
