@@ -306,11 +306,11 @@ blockquote{
 @media (max-width: 768px) {
 
     .header {
-        background: url(../img/citrus1.jpg) no-repeat center center scroll;
+        background: url(../img/citrus.jpg) no-repeat center center fixed;
     }
 
     .callout {
-        background: url(../img/presc.png) no-repeat center center scroll;
+        background: url(../img/presc.png) no-repeat center center fixed;
     }
 
     .map {
