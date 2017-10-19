@@ -23,3 +23,35 @@ $(function () {
         }
     });
 });
+
+
+
+// Load the map only after map div us shown on the user view
+/*$(document).ready(function() {
+    $.getScript('js/map_script.js',function(){
+        $.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBwvZxMf7IaNFJTSf5kMnybx_Hr1iq-KR4&callback=initMap');
+    });
+});*/
+
+var scrollEventHandler = function() {
+    if(isScrolledIntoView(document.getElementById('locals'))) {
+        $.getScript('js/map_script.js',function(){
+            $.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBwvZxMf7IaNFJTSf5kMnybx_Hr1iq-KR4&callback=initMap');
+        });
+        unbindScrollEventHandler();
+    }
+}
+
+function unbindScrollEventHandler() {
+    $(document).unbind('scroll', scrollEventHandler);
+}
+
+$(document).scroll(scrollEventHandler);
+
+function isScrolledIntoView(el) {
+    var elemTop = el.getBoundingClientRect().top;
+    var elemBottom = el.getBoundingClientRect().bottom;
+
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    return isVisible;
+}

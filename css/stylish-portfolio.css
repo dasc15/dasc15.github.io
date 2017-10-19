@@ -129,7 +129,7 @@ body {
     height: 45%;
     width: 100%;
     position: relative;
-    background: url(../img/citrus1.jpg) no-repeat center center fixed;
+    background: url(../img/citrus.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -174,7 +174,7 @@ i.service-icon {
     display: table;
     height: 400px;
     width: 100%;
-    background: url(../img/presc.png) no-repeat center center fixed;
+    background: url(../img/presc.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -306,11 +306,12 @@ blockquote{
 @media (max-width: 768px) {
 
     .header {
-        background: url(../img/citrus3.jpg) no-repeat center center fixed;
+        background: url(../img/citrus.jpg) no-repeat center center fixed;
+        background-size: auto;
     }
 
     .callout {
-        background: url(../img/presc.png) no-repeat center center fixed;
+        background: url(../img/presc.jpg) no-repeat center center fixed;
     }
 
     .map {
@@ -319,7 +320,7 @@ blockquote{
 		/*overflow:hidden;*/
 		padding-bottom:100%;
     }
-	
+
 	.email{
 		font-size: 1.8em;
 	}
