@@ -306,7 +306,7 @@ blockquote{
 @media (max-width: 768px) {
 
     .header {
-        background: url(../img/citrus.jpg) no-repeat center center fixed;
+        background: url(../img/citrus_low_res.jpg) no-repeat center top fixed;
         background-size: auto;
     }
 
